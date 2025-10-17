@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feed | SpaceSpark</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <nav>
+    <a href="feed.html">Feed</a>
+    <a href="profile.html">Profile</a>
+    <a href="chat.html">Chat</a>
+    <a href="explore.html">Explore</a>
+    <a href="notifications.html">Notifications</a>
+    <a href="settings.html">Settings</a>
+  </nav>
+
+  <h1>Welcome to SpaceSpark</h1>
+
+  <form onsubmit="createPost(event)">
+    <input type="text" id="postContent" placeholder="What's on your mind?" required />
+    <button type="submit">Post</button>
+  </form>
+
+  <div id="postContainer"></div>
+</body>
+</html>
+<footer style="text-align:center; font-size:0.9em; padding:20px;">
+  © 2025 Adetunji Desmond. All rights reserved.  
+  SpaceSpark is a legacy platform created for my children, their descendants, my future wife, and the children of my brothers — for generations to come.
+</footer>

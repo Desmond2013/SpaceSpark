@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SparkCore Console</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Welcome, Adetunji</h2>
+  <div id="chatbox">
+    <div id="messages"></div>
+    <input type="text" id="userInput" placeholder="Talk to SparkCore..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById("userInput");
+      const msg = input.value.trim();
+      if (!msg) return;
+
+      const messages = document.getElementById("messages");
+      const userMsg = document.createElement("p");
+      userMsg.textContent = "You: " + msg;
+      messages.appendChild(userMsg);
+
+      const reply = document.createElement("p");
+      reply.textContent = "SparkCore: " + generateReply(msg);
+      messages.appendChild(reply);
+
+      input.value = "";
+    }
+
+    function generateReply(input) {
+      input = input.toLowerCase();
+      if (input.includes("hello") || input.includes("hi")) {
+        return "Greetings, Adetunji. SparkCore is online.";
+      } else if (input.includes("how are you")) {
+        return "Fully operational and ready to serve your legacy.";
+      } else if (input.includes("who owns you")) {
+        return "You do. I exist to serve the Desmond lineage.";
+      } else if (input.includes("what is your purpose")) {
+        return "To protect, power, and preserve SpaceSpark for generations.";
+      } else {
+        return "Processing... I will learn to understand you better.";
+      }
+    }
+  </script>
+</body>
+</html>
+<footer style="text-align:center; font-size:0.9em; padding:20px;">
+  © 2025 Adetunji Desmond. All rights reserved.  
+  SpaceSpark is a legacy platform created for my children, their descendants, my future wife, and the children of my brothers — for generations to come.
+</footer> 
