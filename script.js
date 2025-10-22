@@ -119,7 +119,6 @@ function checkPassword(event) {
   event.preventDefault();
   const pass = document.getElementById("adminPass").value;
   if (pass === "desmond2013") {
-  //  window.location.href = "sparkcore.html";
   } else {
     alert("Incorrect password");
   }
