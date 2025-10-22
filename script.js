@@ -115,14 +115,8 @@ window.onload = function () {
     renderProfile();
   }
 };
-function checkPassword(event) {
-  event.preventDefault();
-  const pass = document.getElementById("adminPass").value;
-  if (pass === "desmond2013") {
-  } else {
-    alert("Incorrect password");
-  }
-}
+
+
 function runCommand(event) {
   event.preventDefault();
   const cmd = document.getElementById("coreCommand").value.toLowerCase();
