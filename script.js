@@ -119,7 +119,7 @@ function checkPassword(event) {
   event.preventDefault();
   const pass = document.getElementById("adminPass").value;
   if (pass === "desmond2013") {
-    window.location.href = "sparkcore.html";
+  //  window.location.href = "sparkcore.html";
   } else {
     alert("Incorrect password");
   }
@@ -228,9 +228,4 @@ function generateReply(input) {
   } else {
     return "Processing your thoughts… I am learning to understand you better with each interaction.";
   }
-}
-let password = prompt("Enter SparkCore access code:");
-if (password !== "desmond2013") {
-  alert("Access denied.");
-  window.location.href = "index.html";
 }
